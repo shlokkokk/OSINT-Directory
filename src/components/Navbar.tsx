@@ -47,14 +47,28 @@ export default function Navbar({
         <div className="flex items-center justify-between h-16">
           {/* Logo and Brand */}
           <div className="flex items-center gap-3">
-            <button
-              onClick={onMenuToggle}
-              data-menu-toggle 
-              className="lg:hidden p-2 rounded-lg text-cyan-400 hover:bg-cyan-500/10 transition-colors"
-              aria-label="Toggle menu"
-            >
-              {isSidebarOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-            </button>
+          <button
+            onClick={onMenuToggle}
+            data-menu-toggle
+            className="lg:hidden relative p-4 -m-2 rounded-xl text-cyan-400 hover:bg-cyan-500/20 active:bg-cyan-500/30 transition-all touch-manipulation"
+            aria-label="Toggle menu"
+            style={{ minWidth: '44px', minHeight: '44px' }}
+          >
+            {/* Large invisible hitbox */}
+            <div className="absolute inset-0 rounded-xl" />
+              
+            {/* Icon with scale animation on tap */}
+            <div className={`relative transition-transform duration-100 ${isSidebarOpen ? 'scale-110' : ''}`}>
+              {isSidebarOpen ? (
+                <X className="w-6 h-6" strokeWidth={2.5} />
+              ) : (
+                <Menu className="w-6 h-6" strokeWidth={2.5} />
+              )}
+            </div>
+            
+            {/* Visual feedback ring */}
+            <div className="absolute inset-0 rounded-xl border-2 border-transparent active:border-cyan-400/50 transition-colors" />
+          </button>
             
             <a href="#" className="flex items-center gap-2 group">
               <div className="relative">
