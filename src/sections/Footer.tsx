@@ -293,7 +293,7 @@ export default function Footer() {
             <div className="flex items-center gap-2 text-cyan-500/50">
               <Shield className="w-3.5 h-3.5 text-cyan-500" />
               <span className="font-medium">
-                Designed, Developed & Maintained by Cybermindspace
+                Designed, Developed & Maintained by Cyber&nbsp;Mind&nbsp;Space
               </span>
             </div>
 
