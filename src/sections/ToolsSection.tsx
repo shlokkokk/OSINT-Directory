@@ -3,15 +3,6 @@ import { Folder, ChevronUp, AlertCircle } from 'lucide-react';
 import ToolCard from '../components/ToolCard';
 import type { OsintData } from '../types/osint';
 
-/**
- * ToolsSection Component
- * Main content area displaying:
- * - Filtered tools grouped by category
- * - Section headers for each category
- * - Scroll to top button
- * - Empty state when no results
- */
-
 interface ToolsSectionProps {
   data: OsintData;
   searchQuery: string;

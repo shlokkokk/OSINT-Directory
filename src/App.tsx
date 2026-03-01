@@ -14,20 +14,6 @@ import Footer from './sections/Footer';
 // Types
 import type { OsintData } from './types/osint';
 
-/**
- * Main App Component
- * 
- * OSINT Tools Directory - A comprehensive cyber-themed resource hub
- * for Open Source Intelligence tools.
- * 
- * Features:
- * - Dynamic tool loading from JSON
- * - Search functionality
- * - Category filtering
- * - Responsive design
- * - Cyber-themed UI with neon accents
- */
-
 function App() {
   // State
   const [osintData, setOsintData] = useState<OsintData>({});

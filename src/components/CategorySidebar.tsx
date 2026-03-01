@@ -1,15 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { ChevronRight, Folder, FolderOpen, Hash, X, Search } from 'lucide-react';
 
-/**
- * CategorySidebar Component
- * Collapsible sidebar for filtering tools by category
- * - Shows all categories with tool counts
- * - Allows multi-select filtering
- * - Search/filter categories
- * - Collapsible on mobile
- */
-
 interface CategorySidebarProps {
   categories: string[];
   selectedCategories: string[];
