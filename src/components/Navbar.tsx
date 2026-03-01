@@ -49,6 +49,7 @@ export default function Navbar({
           <div className="flex items-center gap-3">
             <button
               onClick={onMenuToggle}
+              data-menu-toggle 
               className="lg:hidden p-2 rounded-lg text-cyan-400 hover:bg-cyan-500/10 transition-colors"
               aria-label="Toggle menu"
             >
