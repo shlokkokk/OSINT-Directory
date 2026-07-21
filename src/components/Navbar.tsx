@@ -134,7 +134,7 @@ export default function Navbar({
             </div>
             
             <a
-              href="https://github.com/ALMADADALI"
+              href="https://github.com/shlokkokk/OSINT-Directory"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg text-cyan-500/70 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all"
